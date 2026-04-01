@@ -1,0 +1,113 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+    min-height: 0;
+  }
+  
+  .sidebar-header {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #222;
+  }
+  
+  .sidebar-header h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  
+  .sidebar-header p {
+    font-size: 0.75rem;
+    color: #555;
+  }
+  
+  .theatre-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .theatre-item {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #1a1a1a;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  
+  .theatre-item:hover { background: #1a1a1a; }
+  .theatre-item.active { background: #1e1a0e; border-left: 3px solid #e8b84b; }
+  
+  .theatre-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .theatre-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #eee;
+    line-height: 1.3;
+  }
+  
+  .theatre-type-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 2rem;
+    flex-shrink: 0;
+    font-weight: 600;
+  }
+  
+  .theatre-type-badge.chain { background: #1e3a1e; color: #4ade80; }
+  .theatre-type-badge.independent { background: #1e1a3a; color: #a78bfa; }
+  
+  .theatre-address {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+  }
+  
+  .theatre-meta {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .theatre-rating { font-size: 0.75rem; color: #e8b84b; }
+  .theatre-distance { font-size: 0.72rem; color: #444; }
+  
+  .skeleton-list { padding: 0.5rem 0; }
+  
+  .skeleton-item {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .skeleton-line {
+    height: 10px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+  }
+  
+  .skeleton-line.wide { width: 70%; }
+  .skeleton-line.narrow { width: 45%; }
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  .empty {
+    padding: 2rem 1.2rem;
+    color: #444;
+    font-size: 0.85rem;
+    text-align: center;
+  }
