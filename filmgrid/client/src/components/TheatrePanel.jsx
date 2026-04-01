@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './TheatrePanel.css'
 
-const API = 'http://localhost:3001/api'
+const API = 'https://filmgrid-production.up.railway.app/api'
 
 const FORMAT_COLORS = {
   'IMAX': '#4a9eff',

@@ -5,9 +5,8 @@ import Sidebar from './components/Sidebar'
 import TheatrePanel from './components/TheatrePanel'
 import './App.css'
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiemFpbi1yaXp2aTkiLCJhIjoiY21uNmtsamg1MDIwcjJxb2tuNnRxbzQwZCJ9.SDZWjCEUGbEhzNS25G_-WA'
-const API = 'http://localhost:3001/api'
-
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN
+const API = 'https://filmgrid-production.up.railway.app/api'
 export default function App() {
   const [userLocation, setUserLocation] = useState(null)
   const [theatres, setTheatres] = useState([])
