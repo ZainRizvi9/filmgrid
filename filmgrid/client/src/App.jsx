@@ -7,6 +7,7 @@ import './App.css'
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN
 const API = 'https://filmgrid-production.up.railway.app/api'
+
 export default function App() {
   const [userLocation, setUserLocation] = useState(null)
   const [theatres, setTheatres] = useState([])
@@ -29,7 +30,8 @@ export default function App() {
         setViewport(v => ({ ...v, latitude, longitude }))
         fetchTheatres(latitude, longitude)
       },
-      () => fetchTheatres(43.6532, -79.3832)
+      () => fetchTheatres(43.6532, -79.3832),
+      { timeout: 5000 }
     )
   }, [])
 
