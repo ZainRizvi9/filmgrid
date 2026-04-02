@@ -31,7 +31,7 @@ export default function App() {
         fetchTheatres(latitude, longitude)
       },
       () => fetchTheatres(43.6532, -79.3832),
-      { timeout: 5000 }
+      { timeout: 10000 }
     )
   }, [])
 
