@@ -1,6 +1,6 @@
 # FilmGrid
 
-A movie theatre finder for Toronto that shows real showtimes for both major chains and independent theatres — including ones that don't appear on Fandango or Google Movies.
+A movie theatre finder for Toronto that shows real showtimes for both major chains and independent theatres, including ones that don't appear on Fandango or Google Movies.
 
 **Live:** https://filmgrid-flax.vercel.app  
 **Demo:** https://youtu.be/xm3kWe7uH_E
