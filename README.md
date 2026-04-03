@@ -7,7 +7,7 @@ A movie theatre finder for Toronto that shows real showtimes for both major chai
 
 ## What it does
 
-FilmGrid detects your location and maps nearby theatres with real-time showtimes. Chain theatres pull data from SerpApi's Google Maps engine. Indie theatres like Revue Cinema and Paradise Theatre are scraped directly using Cheerio — giving you showtime and booking data that mainstream platforms don't have.
+FilmGrid detects your location and maps nearby theatres with real-time showtimes. Chain theatres pull data from SerpApi's Google Maps engine. Indie theatres like Revue Cinema and Paradise Theatre are scraped directly using Cheerio, giving you showtime and booking data that mainstream platforms don't have.
 
 Click any showtime chip to book directly on the theatre's website.
 
